@@ -1,0 +1,9 @@
+##factorial program; 
+factorial?5;
+s?1;
+q?1;
+loop(factorial){
+s?s*q;
+q?q+1;
+};
+display(s);

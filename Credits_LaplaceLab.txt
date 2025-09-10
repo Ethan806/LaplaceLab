@@ -1,0 +1,15 @@
+Laplacelab Version 1.0.0 (2025-01-24) -- "Mathematical Symphony"
+Copyright (C) 2025 Laplacelab Team
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+Laplacelab is open-source software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to modify and distribute it under applicable open-source licenses.
+Click 'About_LaplaceLab' for details.
+
+  Advanced mathematical computing with an intuitive interface.
+
+Laplacelab is a collaborative effort from passionate developers.
+
+Click 'Open' to browse files, 'Equation Plotter' to visualize equations, or
+'Documentation' to access the online documentation.
+Click 'Exit' to close Laplacelab.

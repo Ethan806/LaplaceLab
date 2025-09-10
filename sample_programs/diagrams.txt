@@ -1,0 +1,8 @@
+y?retrieve_column(/home/suraj/Pictures/dm/Iris.xlsx, sepal_length);
+x?retrieve_column(/home/suraj/Pictures/dm/Iris.xlsx, sepal_width);
+display(y);
+display(x);
+##plot.scatter_plot(x,y,sepal_width,sepal_length);
+##plot.bar_chart(x,y,sepal_width,sepal_length);
+##plot.Line_Graph(x,y,sepal_width,sepal_length);
+read.docex(/home/suraj/Pictures/dm/Iris.xlsx);

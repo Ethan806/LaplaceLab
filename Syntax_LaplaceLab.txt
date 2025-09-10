@@ -1,0 +1,98 @@
+## 1. The ? operator is used to initialize or update variables with values, arrays, expressions, or retrieved data.;  
+## • Assigning a Simple Value;  
+## x?10; y?3.14; name?"John";  
+## Variables are assigned integer, float, or string values.;  
+## Strings must be enclosed in double quotes (" ");  
+
+## • Assigning an Array;  
+## arr?[1,2,3,4,5]; names?["Alice","Bob","Charlie"];  
+## Arrays are enclosed in square brackets ([ ]);  
+## The assigned value must be a valid list format.;  
+
+## • Assigning a Value from an Array;  
+## x?arr[2];  
+## Retrieves the value at index 2 from arr and assigns it to x.;  
+## If arr does not exist, an error message is displayed.;  
+
+## • Assigning a Value Using retrieve_column;  
+## data?retrieve_column("file.xlsx", "Age");  
+## Extracts a column from an Excel file and assigns it to data.;  
+## The file path and column name must be specified inside parentheses.;  
+
+## • Assigning a Computed Expression;  
+## result?5+3*2;  
+## Supports arithmetic operations (+, -, *, /, %);  
+## Expressions follow standard mathematical precedence.;  
+
+## • Assigning a Value from Another Variable;  
+## z?x;  
+## Assigns the value of x to z.;  
+## If x does not exist, an error is displayed.;  
+
+## • Error cases:;  
+## var?[1,2,3]; → Correct;  
+## var?1,2,3; → Syntax Error;  
+## x?arr[10]; → Error: Index out of range;  
+## y?retrieve_column("data.xlsx", "UnknownColumn"); → Error: Column does not exist;  
+
+## 2. The special character ';' is necessary after every code statement. It includes commented statements as well.;  
+
+## 3. Special characters like ';' and comparison operators are not allowed as variable names.;  
+## Reserved keywords such as 'if', 'else', 'loop', etc. are also not valid variable names.;  
+
+## 4. To display output or variable values, use the display() function with parameters inside parentheses.;  
+## • Displaying a string;  
+## display("Hello, world!");  
+## 1. Enclose text in double quotes.;  
+## 2. The semicolon (;) is required.;  
+
+## • Displaying a stored variable;  
+## display(my_variable);  
+## 1. If my_variable exists in Excel storage, its value is retrieved and printed.;  
+## 2. If it doesn't exist, an error message is shown.;  
+
+## • Displaying an expression result;  
+## display(expr: 5 + 10 * 2);  
+## Must begin with "expr:" to indicate it's an expression.;  
+## Supports +, -, *, /, and % operators.;  
+## Variables used must already exist in Excel storage.;  
+
+## • Error Cases;  
+## display(); → Syntax Error: Empty parentheses are not allowed.;  
+## display(non_existing_var); → Error: Variable does not exist.;  
+## display(expr: x + 2); → Error: The variable x is not found in storage.;  
+
+## 5. Code statements starting with '##' are ignored by the executor.;  
+## This makes them useful for writing comments in your code.;  
+
+## 6. The application supports if-else conditions.;  
+## Syntax involves writing the condition in '()' and block in '{}';  
+## Example: if(5>2){display("Hello World");};else{display("World hello");};  
+
+## 7. To create graphs, use the 'plot.' prefix followed by graph type (scatter_plot, bar_chart, pie_chart, or line_graph);  
+## General format: plot.<graph_type>(X_variable, Y_variable, X_label, Y_label);  
+## Where:;  
+## <graph_type>: One of the available graph types.;  
+## X_variable: Variable name for the x-axis (from Excel);  
+## Y_variable: Variable name for the y-axis (from Excel);  
+## X_label: Label shown for x-axis.;  
+## Y_label: Label shown for y-axis.;  
+
+## 8. The loop(n){} statement allows running a block of code n times sequentially.;  
+## Syntax: loop(n){ statement1; statement2; ... };  
+## n: Number of iterations.;  
+## Statements are enclosed in {} and end with a semicolon.;  
+## Example:;  
+## s?4;  
+## loop(3){ s?s*4; };  
+## display(s);  
+
+## 9. The Equation Plotter feature is available under the Tools section.;  
+## Inputs include:;  
+## • power_x: Power of x variable;  
+## • power_y: Power of y variable;  
+## • Coeff(x): Coefficient of x;  
+## • Coeff(y): Coefficient of y;  
+## • dist: Distance between points;  
+## • constant: Constant value in the equation;  
+

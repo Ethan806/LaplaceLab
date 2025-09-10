@@ -1,0 +1,17 @@
+##fibonaaci program;
+number?6;
+display(number);
+a?number/2;
+s?0;q?0;
+loop(number){
+if(s??a){
+q?1;
+};
+s?s+1;
+};
+if(q??1){
+display("The number is even");
+};
+else{
+display("The number is odd");
+};

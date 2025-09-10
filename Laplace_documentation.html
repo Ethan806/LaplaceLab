@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laplacelab Documentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; }
+        h1, h2, h3 { color: #333; }
+        pre { background: #f4f4f4; padding: 10px; border-left: 5px solid #ccc; }
+        code { font-family: Consolas, monospace; }
+    </style>
+</head>
+<body>
+    <h1>Laplacelab Documentation</h1>
+    <p>Laplacelab is a scripting and computation environment that supports variable management, loops, mathematical operations, and file handling.</p>
+    
+    <h2>1. Variable Initialization</h2>
+    <p>Use the `?` operator to assign values to variables.</p>
+    <pre><code>x?10;
+y?x*2;</code></pre>
+    
+    <h2>2. Displaying Output</h2>
+    <p>Use the `display()` function to print values to the console.</p>
+    <pre><code>display("Hello World");
+display(x);</code></pre>
+    
+    <h2>3. Loops</h2>
+    <p>Loops are defined using `loop(n) {}` syntax.</p>
+    <pre><code>loop(3){
+    y?y+5;
+    display(y);
+};</code></pre>
+    
+    <h2>4. Mathematical Expressions</h2>
+    <p>Supports arithmetic operations and expressions.</p>
+    <pre><code>z?expr:(x+y)/2;</code></pre>
+    
+    <h2>5. File Handling</h2>
+    <p>Reading and writing Excel files using `read.docex`.</p>
+    <pre><code>read.docex("data.xlsx");</code></pre>
+    
+    <h2>6. Graphs and Visualizations</h2>
+    <p>Create scatter plots and other charts.</p>
+    <pre><code>plot.scatter(x_values, y_values);</code></pre>
+    
+    <h2>7. Error Handling</h2>
+    <p>Errors are prefixed with `#ERROR:`.</p>
+    <pre><code>#ERROR: Variable not defined</code></pre>
+</body>
+</html>
+
